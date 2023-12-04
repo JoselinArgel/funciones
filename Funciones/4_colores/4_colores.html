@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .number1{
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+       }
+       .number2{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+       }
+       .number3{
+        width: 200px;
+        height: 200px;
+        background-color: green;
+       }
+       .number4{
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="number1" id="div1"></div>
+    <div class="number2" id="div2"></div>
+    <div class="number3" id="div3"></div>
+    <div class="number4" id="div4"></div>
+ <script>
+ function cambiarColor (idDiv){
+var element = document.getElementById(idDiv)
+element.style.backgroundColor = "black";
+ }
+ document.getElementById("div1").addEventListener("click", function(){
+    cambiarColor ("div1")
+ })
+ document.getElementById("div2").addEventListener("click", function(){
+    cambiarColor ("div2")
+ })
+ document.getElementById("div3").addEventListener("click", function(){
+    cambiarColor ("div3")
+})
+document.getElementById("div4").addEventListener("click", function(){
+    cambiarColor ("div4")
+})
+
+
+  
+ </script>
+</body>
+</html>
